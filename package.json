@@ -18,6 +18,7 @@
     "prebuilds/**",
     "bindings/node/*",
     "queries/*",
+    "queries/highlights.scm",
     "src/**"
   ],
   "dependencies": {
@@ -47,7 +48,9 @@
   "tree-sitter": [
     {
       "scope": "source.baabnq",
-      "injection-regex": "^baabnq$"
+      "injection-regex": "^baabnq$",
+      "highlights": "queries/highlights.scm",
+      "file-types": ["baabnq"]
     }
   ]
 }

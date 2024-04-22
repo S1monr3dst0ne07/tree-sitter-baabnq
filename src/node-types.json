@@ -301,6 +301,11 @@
     }
   },
   {
+    "type": "return",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "source_file",
     "named": true,
     "fields": {},
@@ -616,7 +621,7 @@
   },
   {
     "type": "return",
-    "named": true
+    "named": false
   },
   {
     "type": "static",

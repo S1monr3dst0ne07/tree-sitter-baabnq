@@ -271,8 +271,13 @@
       ]
     },
     "return": {
-      "type": "STRING",
-      "value": "return"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "return"
+        }
+      ]
     },
     "pull": {
       "type": "SEQ",
