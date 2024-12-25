@@ -1,12 +1,15 @@
 cat init.lua >> ~/.config/lvim/config.lua
 
-mkdir -p ~/.config/nvim/queries/baabnq
-cp queries/highlights.scm "$_"
-mkdir -p ~/.local/share/nvim/queries/baabnq
-cp queries/highlights.scm "$_"
+cp_hghl()
+{
+    mkdir -p $1
+    cp queries/highlights.scm $1
+}
+
+cp_hghl ~/.config/nvim/queries/baabnq
+cp_hghl ~/.local/share/nvim/queries/baabnq
 
 if [ -d ~/.local/share/lunarvim ]; then
-    mkdir -p ~/.local/share/lunarvim/site/pack/lazy/opt/nvim-treesitter/queries/baabnq/
-    cp queries/highlights.scm "$_"
+    cp_hghl ~/.local/share/lunarvim/site/pack/lazy/opt/nvim-treesitter/queries/baabnq/
 fi
 
